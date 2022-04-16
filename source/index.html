@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Intro section with dropdown navigation</title>
+  </head>
+
+  <body>
+    <!-- this is navbar section -->
+    <section class="NavBar">
+      <a id="SNAP-header-typo" href="index.html">SNAP</a>
+      
+      <img
+        onclick="openNav()"
+        id="Menu-button"
+        src="../images/icon-menu.svg"
+        alt="Menu icon"
+      />
+      <div id="Menu">
+        <img
+          onclick="closeNav()"
+          id="Menu-button"
+          src="../images/icon-close-menu.svg"
+          alt="Menu icon"
+        />
+
+        <!-- Feature collapse -->
+        <button type="button" class="collapsible">
+          Features <img src="../images/icon-arrow-down.svg" />
+        </button>
+        <div class="content">
+          <div>
+            <img src="../images/icon-todo.svg" />
+            <a href="#">Todo List</a>
+          </div>
+          <div>
+            <img src="../images/icon-calendar.svg" />
+            <a href="#">Calendar</a>
+          </div>
+          <div>
+            <img src="../images/icon-reminders.svg" />
+            <a href="#">Reminder</a>
+          </div>
+          <div>
+            <img src="../images/icon-planning.svg" />
+            <a href="#">Planning</a>
+          </div>
+        </div>
+
+        <!-- Company collapse -->
+        <button type="button" class="collapsible">
+          Company <img src="../images/icon-arrow-down.svg" />
+        </button>
+        <div class="content">
+          <div>
+            <a href="#">History</a>
+          </div>
+          <div>
+            <a href="#">Our Team</a>
+          </div>
+          <div>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+
+        <!-- other collapse -->
+        <div>
+          <a id="other-collapse" href="#">Careers</a>
+        </div>
+        <div>
+          <a id="other-collapse" href="#">About</a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/hosseinrmt" target="_blank">Hossein Rahmati</a
+      >.
+    </div>
+  </body>
+</html>

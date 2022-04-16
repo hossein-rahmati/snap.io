@@ -1,0 +1,135 @@
+/* Root initial */
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: Epilogue-Medium;
+    src: url(../fonts/static/Epilogue-Medium.ttf);
+}
+
+@font-face {
+    font-family: Epilogue-Bold;
+    src: url(../fonts/static/Epilogue-Bold.ttf);
+}
+
+@font-face {
+    font-family: Epilogue-Light;
+    src: url(../fonts/static/Epilogue-Light.ttf);
+}
+
+body {
+    padding: 10px;
+    font-family: Epilogue-Bold;
+    box-sizing: border-box;
+    min-width: 375px;
+}
+
+
+
+/* Navbar part */
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#Menu {
+    display: flex;
+    padding: 25px;
+    display: none;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 60%;
+    height: 100%;
+    background-color: white;
+}
+
+#Menu img {
+    float: right;
+}
+
+#other-collapse {
+    color: #111;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+#other-collapse:hover {
+    color: var(--Medium-Gray);
+}
+
+.collapsible {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #111;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    padding: 0 18px;
+    display: none;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.content a {
+    color: #111;
+    text-decoration: none;
+    margin-bottom: 25px;
+    display: block;
+    margin-left: 25px;
+}
+
+.content a:hover {
+    color: var(--Medium-Gray);
+}
+
+.content div {
+    display: flex;
+    align-items: baseline;
+}
+
+.content div img {
+    margin-left: 25px;
+}
+
+#SNAP-header-typo {
+    color: black;
+    font-size: 30px;
+}
+
+#SNAP-header-typo:link {
+    text-decoration: none;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
