@@ -7,17 +7,17 @@
 
 @font-face {
     font-family: Epilogue-Medium;
-    src: url(../fonts/static/Epilogue-Medium.ttf);
+    src: url(fonts/static/Epilogue-Medium.ttf);
 }
 
 @font-face {
     font-family: Epilogue-Bold;
-    src: url(../fonts/static/Epilogue-Bold.ttf);
+    src: url(fonts/static/Epilogue-Bold.ttf);
 }
 
 @font-face {
     font-family: Epilogue-Light;
-    src: url(../fonts/static/Epilogue-Light.ttf);
+    src: url(fonts/static/Epilogue-Light.ttf);
 }
 
 body {
