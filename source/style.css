@@ -37,6 +37,10 @@ body {
     margin-bottom: 30px;
 }
 
+#Menu-desktop {
+    display: none;
+}
+
 #Menu {
     display: flex;
     padding: 25px;
@@ -47,6 +51,7 @@ body {
     width: 60%;
     height: 100%;
     background-color: white;
+    z-index: 2;
 }
 
 #Menu-button {
@@ -86,7 +91,8 @@ body {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 25px;
+    font-size: 20px;
+    font-family: Epilogue-Bold;
 }
 
 .content {
@@ -104,15 +110,18 @@ body {
     margin-bottom: 25px;
     display: block;
     margin-left: 25px;
-}
 
-.content a:hover {
-    color: var(--Medium-Gray);
 }
 
 .content div {
     display: flex;
     align-items: baseline;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.content div:hover {
+    background-color: rgb(236, 236, 236);
 }
 
 .content div img {
@@ -135,6 +144,10 @@ body {
     width: 100%;
     max-width: 1024px;
     height: auto;
+}
+
+#bgMainImg2 {
+    display: none;
 }
 
 .Content-Upper-part {
@@ -160,6 +173,7 @@ body {
     text-decoration: none;
     font-family: Epilogue-Medium;
     color: var(--Almost-White);
+    border: none;
     width: 150px;
     height: 50px;
     background-color: var(--Almost-Black);
@@ -170,6 +184,9 @@ body {
 
 .Content-lower-part button:hover {
     opacity: 0.89;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
 }
 
 
@@ -190,4 +207,185 @@ footer {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+
+
+/* this part is for perform responsive */
+
+
+@media only screen and (min-width: 1440px) {
+
+    /* navbar part */
+
+    #Menu-button {
+        display: none;
+    }
+
+    #Menu-desktop {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .LoginRigesterSection {
+        margin-right: 40px;
+    }
+
+    .LoginRigesterSection button {
+        margin-left: 10px;
+        border: 2px solid #111;
+        border-radius: 14px;
+        width: 104px;
+        height: 50px;
+        background-color: #fff;
+        font-family: Epilogue-Bold;
+        cursor: pointer;
+        opacity: 0.8;
+        font-size: 16px;
+        transition: ease 200ms;
+    }
+
+    .LoginRigesterSection button:hover {
+        opacity: 1;
+        color: #fff;
+        background-color: #111;
+    }
+
+    #Menu {
+        display: none;
+    }
+
+    .NavBar {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .dropbtn {
+        color: var(--Almost-Black);
+        padding: 25px;
+        font-size: 20px;
+        font-family: Epilogue-Bold;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+        margin: 0px 0px 0px 50px;
+        opacity: 0.5;
+        transition: 500ms;
+    }
+
+    .dropbtn:hover {
+        opacity: 1;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        border-radius: 14px;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: 300ms;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+        border-radius: 14px;
+    }
+
+    .show {
+        display: block;
+    }
+
+    #option-other {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: inline;
+        margin-left: 80px;
+        font-size: 20px;
+        opacity: 0.6;
+        transition: 500ms;
+    }
+
+    #option-other:hover {
+        opacity: 1;
+    }
+
+
+
+    /* content part */
+
+    .Content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    #bgMainImg {
+        display: none;
+    }
+
+    #bgMainImg2 {
+        display: inline;
+        width: 450px;
+        margin-right: 100px;
+        transition: ease-out 500ms;
+    }
+
+    #bgMainImg2:hover {
+        filter: saturate(200%);
+    }
+
+    .Content-lower-part {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 100px;
+        float: left;
+        width: 45%;
+    }
+
+    h1 {
+        font-size: 95px;
+        text-align: left;
+    }
+
+    .Content-lower-part p {
+        text-align: left;
+        margin-bottom: 60px;
+    }
+
+
+    /* footer part */
+
+    footer {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0px 0px 30px 20px;
+    }
+
+    footer a {
+        margin-left: 80px;
+    }
 }

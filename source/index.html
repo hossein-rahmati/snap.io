@@ -20,6 +20,54 @@
         ><img src="../images/logo.svg"
       /></a>
 
+      <!-- this part is for desktop design -->
+      <div id="Menu-desktop">
+        <div>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+              Features
+              <img src="../images/icon-arrow-down.svg" alt="">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">
+                <img src="../images/icon-todo.svg" />
+                Todo list
+              </a>
+              <a href="#">
+                <img src="../images/icon-calendar.svg" />
+                Calendar
+              </a>
+              <a href="#">
+                <img src="../images/icon-reminders.svg" />
+                Reminder
+              </a>
+              <a href="#">
+                <img src="../images/icon-planning.svg" />
+                Planning
+              </a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button onclick="myFunction2()" class="dropbtn">
+              Company
+              <img src="../images/icon-arrow-down.svg" alt="">
+            </button>
+            <div id="myDropdown2" class="dropdown-content">
+              <a href="#"> History </a>
+              <a href="#"> Our Team </a>
+              <a href="#"> Blog </a>
+            </div>
+          </div>
+          <a id="option-other" href="#">Careers</a>
+          <a id="option-other" href="#">About</a>
+        </div>
+        <div class="LoginRigesterSection">
+          <button type="button">Login</button>
+          <button type="button">Register</button>
+        </div>
+      </div>
+
+      <!-- this part is for mobile design -->
       <img
         onclick="openNav()"
         id="Menu-button"
@@ -86,7 +134,8 @@
     <!-- this is main content section -->
     <section class="Content">
       <div class="Content-Upper-part">
-        <img src="../images/image-hero-mobile.png" />
+        <img id="bgMainImg" src="../images/image-hero-mobile.png" />
+        <img id="bgMainImg2" src="../images/image-hero-desktop.png" />
       </div>
       <div class="Content-lower-part">
         <h1>Make remote work</h1>
@@ -101,10 +150,10 @@
     <!-- this is footer part -->
     <section class="footer">
       <footer>
-        <span><img src="../images/client-databiz.svg" /></span>
-        <span><img src="../images/client-audiophile.svg" /></span>
-        <span><img src="../images/client-meet.svg" /></span>
-        <span><img src="../images/client-maker.svg" /></span>
+        <a href="#"><img src="../images/client-databiz.svg" /></a>
+        <a href="#"><img src="../images/client-audiophile.svg" /></a>
+        <a href="#"><img src="../images/client-meet.svg" /></a>
+        <a href="#"><img src="../images/client-maker.svg" /></a>
       </footer>
     </section>
 
