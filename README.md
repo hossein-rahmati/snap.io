@@ -1,11 +1,9 @@
 hey there,
 
-this is snap Project.
+this is a snap Project.
 
-I used HTML, CSS and Js in my project.
+I used HTML, CSS, and Js in my project.
 
-my Most challenge was in dropDowns
-
-you can also see project online on https://hosseinrmt.github.io/snap.io/
+my biggest challenge was in dropDowns
 
 I hope You enjoy :)
